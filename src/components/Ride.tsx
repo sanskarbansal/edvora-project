@@ -1,7 +1,6 @@
 import { Box, Image, Text, useMediaQuery } from "@chakra-ui/react";
 
 import React from "react";
-import { getDistance } from "../utils/utils";
 
 const getFormattedDate = (date: number) => {
     let dateInChunks = new Date(date).toString().split(" ");

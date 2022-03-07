@@ -1,5 +1,5 @@
-import React, { ChangeEvent, SyntheticEvent, useEffect, useState } from "react";
-import { Box, Menu, MenuButton, MenuItem, MenuList, Select, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { Box, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import axios from "axios";
 import { getRides, getUser } from "../config/apiUrls";
 import Ride from "../components/Ride";
