@@ -1,14 +1,13 @@
 import * as React from "react";
-import { ChakraProvider, Box, Text, Grid, theme } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import { ChakraProvider, Box, Grid, theme } from "@chakra-ui/react";
+import HomeScreen from "./screens/HomeScreen";
+import Navbar from "./components/Navbar";
 
 export const App = () => (
     <ChakraProvider theme={theme}>
-        <Box textAlign="center" fontSize="xl">
-            <Grid minH="100vh" p={3}>
-                <ColorModeSwitcher justifySelf="flex-end" />
-                <Text fontSize="6xl">Init Project</Text>
-            </Grid>
+        <Box fontSize="xl">
+            <Navbar />
+            <HomeScreen />
         </Box>
     </ChakraProvider>
 );
